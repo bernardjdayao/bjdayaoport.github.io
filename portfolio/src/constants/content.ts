@@ -7,6 +7,8 @@ import type {
   NavLink,
 } from '../types';
 
+const basePath = import.meta.env.BASE_URL;
+
 export const SITE = {
   name: 'Bernard Justin Dayao',
   role: 'Full-Stack Developer',
@@ -49,7 +51,7 @@ export const PROJECTS: Project[] = [
     ],
     tech: ['MongoDB', 'Express', 'React', 'Node.js', 'AES‑256‑GCM', 'ECDSA', 'mTLS'],
     github: 'https://github.com/cidbrill/JMCBL-WfMS',
-    image: '/projects/workflow-system.jpg',
+    image: `${basePath}projects/workflow-system.jpg`,
   },
   {
     id: 'parkguard',
@@ -63,7 +65,7 @@ export const PROJECTS: Project[] = [
       'Persistent backend on Ktor and PostgreSQL',
     ],
     tech: ['Kotlin', 'Jetpack Compose', 'Ktor', 'PostgreSQL'],
-    image: '/projects/parkguard.jpg',
+    image: `${basePath}projects/parkguard.jpg`,
   },
   {
     id: 'attendance-system',
@@ -77,7 +79,7 @@ export const PROJECTS: Project[] = [
       'Reliable reporting across hundreds of attendees',
     ],
     tech: ['PHP', 'Oracle', 'Tableau'],
-    image: '/projects/attendance-system.png',
+    image: `${basePath}projects/attendance-system.png`,
   },
 ];
 
